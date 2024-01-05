@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #191919;
+    color: #fff;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.text{
+    position: absolute;
+    cursor: pointer;
+}
+.text span{
+    font-size: 120px;
+    font-weight: 600;
+    display: inline-block;
+    color: #219ebc;
+    transition: 1.5s;
+}
+.container:hover .span4{
+    transform: rotate(45deg) translateY(-200px);
+    opacity: 0;
+    filter: blur(30px);
+}
+.container .text2 .span4{
+    transform: rotate(-45deg) translateY(200px);
+    opacity: 0;
+    color: #7209b7;
+    filter: blur(30px);
+}
+.container:hover .text2 .span4{
+    transform: rotate(0deg) translateY(00px);
+    opacity: 1;
+    filter: blur(0);
+}
